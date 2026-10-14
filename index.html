@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minh họa thuộc tính CSS Grid grid-gap với khoảng cách đều và khoảng cách riêng cho hàng, cột.">
+    <title>Grid Gap — CSS Grid Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#top"><span>G</span> CSS GRID LAB</a>
+        <p>Bài thực hành <strong>05 / 07</strong></p>
+    </header>
+
+    <main id="top">
+        <section class="intro">
+            <p class="eyebrow">GRID PROPERTIES / 05</p>
+            <h1>Tạo khoảng cách.<br><em>Tạo nhịp điệu.</em></h1>
+            <p class="intro-copy"><code>grid-gap</code> đặt khoảng trống giữa các hàng và cột. Một thuộc tính ngắn gọn, hai chiều kiểm soát.</p>
+        </section>
+
+        <section class="example">
+            <div class="example-heading">
+                <div><span class="example-index">A</span><h2>Một giá trị cho cả hai chiều</h2></div>
+                <span class="result">row 20px <span>·</span> column 20px</span>
+            </div>
+            <div class="demo-grid uniform-grid" aria-label="Lưới hai cột với khoảng cách đều 20 pixel">
+                <div class="cell"><span>01</span> Ô một</div>
+                <div class="cell"><span>02</span> Ô hai</div>
+                <div class="cell"><span>03</span> Ô ba</div>
+                <div class="cell"><span>04</span> Ô bốn</div>
+            </div>
+            <p class="code"><code>grid-gap: 20px;</code><span>Tương đương <code>grid-row-gap: 20px</code> và <code>grid-column-gap: 20px</code>.</span></p>
+        </section>
+
+        <section class="example">
+            <div class="example-heading">
+                <div><span class="example-index alt-index">B</span><h2>Khoảng cách hàng và cột khác nhau</h2></div>
+                <span class="result">row 30px <span>·</span> column 10px</span>
+            </div>
+            <div class="demo-grid varied-grid" aria-label="Lưới ba cột với khoảng cách hàng 30 pixel và cột 10 pixel">
+                <div class="cell"><span>01</span> Ô một</div>
+                <div class="cell"><span>02</span> Ô hai</div>
+                <div class="cell"><span>03</span> Ô ba</div>
+                <div class="cell"><span>04</span> Ô bốn</div>
+                <div class="cell"><span>05</span> Ô năm</div>
+                <div class="cell"><span>06</span> Ô sáu</div>
+            </div>
+            <p class="code"><code>grid-gap: 30px 10px;</code><span>Giá trị thứ nhất là row-gap, thứ hai là column-gap. Cú pháp mới: <code>gap: 30px 10px</code>.</span></p>
+        </section>
+
+        <aside class="note">
+            <span aria-hidden="true">✳</span>
+            <p><strong>Nhớ thứ tự</strong> Với hai giá trị, viết <code>grid-gap: row-gap column-gap;</code> — hàng trước, cột sau.</p>
+        </aside>
+    </main>
+
+    <footer><span>CSS GRID LAB</span><span>05 — 07</span></footer>
+</body>
+</html>
